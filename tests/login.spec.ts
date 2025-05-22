@@ -9,7 +9,7 @@ test('loading sign in and sign up page', async ({ page }) => {
         await expect(page.getByText('Already have an account?')).toBeVisible();
     });
 
-    await test.step('sign up page2', async () => {
+    await test.step('sign up page3', async () => {
         await page.getByPlaceholder('Enter your name').fill('Chau Pha');
         await page.getByPlaceholder('Enter your email').fill('chaupha180801@gmail.com');
         await page.locator('input[type="password"]').fill('Pha180801@');
